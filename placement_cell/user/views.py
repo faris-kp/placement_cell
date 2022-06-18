@@ -1,10 +1,11 @@
+import email
 from django.shortcuts import render,redirect
 from requests import request
 from user.forms import UserRegisterForm,LoginForm
 from django.contrib import messages
 from django.views.generic import View
 from django.contrib.auth import authenticate,login
-from django.contrib.auth.models import User
+from user.models import Custmuser
 
 
 
@@ -12,12 +13,11 @@ from django.contrib.auth.models import User
 def Register(request):
     if request.method =='POST':
         form = UserRegisterForm(request.POST)
-        print("")
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, f'Your Account Has Been Created for {username} You Are Able To Login')
-            return redirect('P_home')
+            return redirect('sign_in')
     else:
         form = UserRegisterForm()
 
@@ -49,8 +49,8 @@ class Signin(View):
 
             # my_res = Restaurant.objects.filter(resn=request.user) $ for organaisation check
             print(request.user)
-            my_cus = User.objects.get(user=request.user)
-            print(my_cus)
+            my_cus = Custmuser.objects.filter(user=request.user)
+            print("user chek",my_cus)
         
             if request.user.is_superuser:
                 return redirect('A_home')

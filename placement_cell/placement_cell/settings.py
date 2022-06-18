@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'placement_cell.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'placement_cell',
+       'NAME': 'Placement_Cell',
        'USER': 'postgres',
        'PASSWORD':os.environ.get('pass'),
        'HOST': 'localhost',

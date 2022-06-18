@@ -1,3 +1,8 @@
 from django.contrib import admin
+from user.models import Custmuser
 
-# Register your models here.
+
+admin.site.register(Custmuser)
+
+
+

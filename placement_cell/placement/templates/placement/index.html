@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <meta name="description" content="foodbite is a three star restaurant in kerala. It has also a premium food delivery service with the mission of bringing affordable and healthy meals to as many people as possible.">
+     
+      <link rel="stylesheet" type="text/css" href="{% static 'placement/vendors/css/normalize.css' %}">
+       <link rel="stylesheet" type="text/css" href="{% static 'placement/vendors/css/grid.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'placement/vendors/css/ionicons.min.css' %}">
+       <link rel="stylesheet" type="text/css" href="{% static 'placement/resources/css/style.css' %}">
+       <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
+       <title>Placement cell</title>
+        <link rel="shortcut icon" href="{% static 'placement/resources/img/icon/LEVEL UP.png' %}">
+</head>
+    <body>
+       <header>
+          <nav>
+         <!-- nav start  -->
+
+              <div class="row">
+                  <img src="{% static 'placement/resources/img/new/logo2.png' %}" alt="placement logo" class="logo">
+                  <img src="{% static 'placement/resources/img/new/logo2.png' %}" alt="placement logo" class="logo-black">
+
+                  <ul class="main-nav js--main-nav"> 
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">contact us</a></li>
+                  <li><a href="#">sign in</a></li>
+                  <li><a href="#">Sign  up</a></li>
+                  </ul>
+                  <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+              </div>
+          </nav>
+    <!--Nav end -->
+    <!--landing page-->
+           <div class="background-text-box">
+               <h1>Placement Cell Management<br> System Geci</h1>
+               <a class="btn btn-ghost " href="#">Read more</a>
+           </div>
+    <!--landing page end-->
+           
+       </header>
+    <!-- section start  -->
+          
+          <section class="section-features  js--section-features" id="features">
+              <div class="row">
+                 
+                  <!-- <h2>Get food fast &mdash; not fast food </h2> -->
+                  <h2>About us</h2>
+                  <p class="long-copy">
+                     main heading
+                  </p>
+              </div>
+              
+              <div class="row js--wp-1">
+
+                  <div class="col span-1-of-3 box">
+                   
+                    
+                     <!-- <i class="ion-ios-stopwatch-outline icon-big"></i> icon -->
+                      <h3>pass</h3>
+                      <p>
+                          pass
+                      </p>
+                      
+                  </div>
+                  
+                  <div class="col span-1-of-3 box">
+                    
+                     <!-- <i class="ion-ios-nutrition-outline icon-big"></i> icon -->
+                     
+                     
+
+                      <h3>pass</h3>
+                      <p>
+                         pass
+                      </p>
+                      
+                  </div>
+                  
+                  <div class="col span-1-of-3 box">
+                    <!-- <i class="ion-ios-cart-outline icon-big"></i> icon -->
+                    
+                      <h3>pass</h3>
+                      <p>
+                          pass
+                      </p>
+                      
+                  </div>
+                  
+              </div>
+              
+          </section>
+    <!-- section end  -->
+
+          
+       
+        <section class="section-form">
+            
+            <div class="row">
+                <h2>enter your feedbaks</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            
+                            <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3 ">
+                            <input class="btn btn-outline-info contactus" type="submit" value="Send it!"> 
+                        </div>
+                    </div>
+                    
+                </form>
+                            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a> </li> 
+                        <li><a href="#"><i class="ion-social-twitter"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a> </li>
+                        <li><a href="#" target="_blank"><i class="ion-social-instagram"></i></a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <p>
+                    Copyright &copy; 2022 by Dcode . All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="{% static 'placement/vendors/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'placement/resources/js/script.js' %}"></script>
+        
+    </body>
+    
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

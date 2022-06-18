@@ -1,0 +1,64 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V9</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'placement/css/main1.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'placement/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+		<div class="container-login100" style="background-image: url('{% static 'placement/resources/css/img/hm.jpg' %}');">
+		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+			<div class="card-body">
+			<form class="login100-form validate-form" action="#" method="POST">
+				<span class="login100-form-title p-b-37">
+					Sign Up
+				</span>
+				
+				{% csrf_token %}
+                
+                
+                {{ form|crispy }}
+
+                 
+				<div class="container-login100-form-btn py-2">
+                    
+                      <input type="submit" value="Sign Up" id="signupDetail" class="login100-form-btn " name="submit">
+				</div>
+
+				<div class="text-center p-t-57 p-b-20">
+					<a href="#" class="txt2 hov1">
+						Or Sign In
+				</a>
+				</div>
+			 </div>
+			</form>
+		</div>
+
+			
+		</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	<script src="{% static 'js/signup.js' %}"></script>
+	<script src="{% static 'placement/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'placement/vendor/animsition/js/animsition.min.js' %}"></script>
+	<script src="{% static 'placement/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'placement/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'placement/vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'placement/vendor/daterangepicker/daterangepicker.js' %}"></script>
+	<script src="{% static 'placement/vendor/countdowntime/countdowntime.js' %}"></script>
+    <script src="{% static 'placement/js/main1.js' %}"></script>
+	<script src="{% static 'placement/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>
